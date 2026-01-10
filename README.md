@@ -10,11 +10,21 @@ A real-time stock sentiment analysis platform combining Python AI/ML backend wit
 - **Modern Dashboard**: Next.js dashboard to visualize sentiment trends
 - **Production Ready**: Secure environment variable management, comprehensive logging
 
-## 📈 Tracked Stocks
+## 📈 Tracked Stocks (100+ Top Tickers)
 
-- **AAPL** - Apple Inc.
-- **NVDA** - NVIDIA Corporation
-- **TSLA** - Tesla Inc.
+Comprehensive coverage of the most traded stocks across all major sectors:
+
+- **Mega Cap Tech** - AAPL, MSFT, GOOGL, AMZN, NVDA, META, TSLA, etc.
+- **High Growth** - PLTR, COIN, SNOW, CRWD, ABNB, UBER, etc.
+- **Semiconductors** - AMD, INTC, TSM, QCOM, ASML, MU, SMCI, etc.
+- **Financials** - JPM, BAC, GS, V, MA, PYPL, BLK, etc.
+- **Healthcare** - UNH, JNJ, LLY, ABBV, PFE, TMO, etc.
+- **Consumer** - WMT, COST, HD, NKE, MCD, DIS, etc.
+- **Energy** - XOM, CVX, COP, SLB, EOG
+- **Industrial** - BA, CAT, GE, UPS, F, GM, etc.
+- **Major ETFs** - SPY, QQQ, IWM, DIA, VOO
+
+*Full list of ~100 tickers covering S&P 100 + most popular retail stocks*
 
 ## 🏗️ Architecture
 

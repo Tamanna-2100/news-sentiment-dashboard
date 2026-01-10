@@ -19,11 +19,47 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Define tickers to track
+# Define tickers to track - Top 100 most traded stocks
 TICKERS = {
-    'AAPL': 'Apple',
-    'NVDA': 'NVIDIA',
-    'TSLA': 'Tesla'
+    # Mega Cap Tech
+    'AAPL': 'Apple', 'MSFT': 'Microsoft', 'GOOGL': 'Google', 'AMZN': 'Amazon', 'NVDA': 'NVIDIA',
+    'META': 'Meta', 'TSLA': 'Tesla', 'AVGO': 'Broadcom', 'ORCL': 'Oracle', 'ADBE': 'Adobe',
+    'CRM': 'Salesforce', 'INTC': 'Intel', 'AMD': 'AMD', 'CSCO': 'Cisco', 'ACN': 'Accenture',
+    
+    # High Growth Tech
+    'NFLX': 'Netflix', 'SHOP': 'Shopify', 'SQ': 'Block', 'SPOT': 'Spotify', 'UBER': 'Uber',
+    'ABNB': 'Airbnb', 'SNOW': 'Snowflake', 'CRWD': 'CrowdStrike', 'ZS': 'Zscaler', 'DDOG': 'Datadog',
+    'PLTR': 'Palantir', 'RBLX': 'Roblox', 'U': 'Unity', 'COIN': 'Coinbase', 'RIVN': 'Rivian',
+    
+    # Semiconductors
+    'TSM': 'Taiwan Semi', 'ASML': 'ASML', 'QCOM': 'Qualcomm', 'AMAT': 'Applied Materials', 'LRCX': 'Lam Research',
+    'KLAC': 'KLA Corp', 'MRVL': 'Marvell', 'MU': 'Micron', 'SMCI': 'Super Micro', 'ON': 'ON Semiconductor',
+    
+    # Financials
+    'JPM': 'JPMorgan', 'BAC': 'Bank of America', 'WFC': 'Wells Fargo', 'C': 'Citigroup', 'GS': 'Goldman Sachs',
+    'MS': 'Morgan Stanley', 'BLK': 'BlackRock', 'SCHW': 'Charles Schwab', 'AXP': 'American Express', 'V': 'Visa',
+    'MA': 'Mastercard', 'PYPL': 'PayPal', 'BX': 'Blackstone', 'KKR': 'KKR', 'CME': 'CME Group',
+    
+    # Healthcare
+    'UNH': 'UnitedHealth', 'JNJ': 'Johnson & Johnson', 'LLY': 'Eli Lilly', 'ABBV': 'AbbVie', 'PFE': 'Pfizer',
+    'TMO': 'Thermo Fisher', 'ABT': 'Abbott', 'MRK': 'Merck', 'DHR': 'Danaher', 'BMY': 'Bristol Myers',
+    
+    # Consumer
+    'AMZN': 'Amazon', 'COST': 'Costco', 'WMT': 'Walmart', 'HD': 'Home Depot', 'NKE': 'Nike',
+    'MCD': 'McDonalds', 'SBUX': 'Starbucks', 'TGT': 'Target', 'DIS': 'Disney', 'CMCSA': 'Comcast',
+    
+    # Energy
+    'XOM': 'Exxon', 'CVX': 'Chevron', 'COP': 'ConocoPhillips', 'SLB': 'Schlumberger', 'EOG': 'EOG Resources',
+    
+    # Industrial & Auto
+    'BA': 'Boeing', 'CAT': 'Caterpillar', 'GE': 'General Electric', 'HON': 'Honeywell', 'UPS': 'UPS',
+    'F': 'Ford', 'GM': 'General Motors', 'LCID': 'Lucid', 'NIO': 'NIO',
+    
+    # Communications
+    'T': 'AT&T', 'VZ': 'Verizon', 'TMUS': 'T-Mobile', 'NFLX': 'Netflix',
+    
+    # ETFs (Most Traded)
+    'SPY': 'S&P 500', 'QQQ': 'Nasdaq 100', 'IWM': 'Russell 2000', 'DIA': 'Dow Jones', 'VOO': 'Vanguard S&P'
 }
 
 # Update interval in seconds (30 minutes)
