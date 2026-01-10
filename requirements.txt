@@ -1,0 +1,5 @@
+newsapi-python==0.2.7
+supabase==2.3.4
+transformers==4.36.2
+torch==2.1.2
+python-dotenv==1.0.0

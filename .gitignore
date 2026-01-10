@@ -1,0 +1,95 @@
+# ============================================
+# Sentiment Momentum Trader
+# Combined Python Backend + Next.js Dashboard
+# ============================================
+
+# ============================================
+# Environment Variables (CRITICAL - NEVER COMMIT)
+# ============================================
+.env
+.env.local
+.env*.local
+*.env
+
+# ============================================
+# Python Backend
+# ============================================
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Distribution
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ============================================
+# Next.js Dashboard
+# ============================================
+# Dependencies
+node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js Build
+/.next/
+/out/
+.next/
+next-env.d.ts
+
+# Production
+/build
+
+# Testing
+/coverage
+
+# ============================================
+# IDE & OS Files
+# ============================================
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# ============================================
+# Logs & Debug
+# ============================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+logs/
+
+# ============================================
+# Deployment
+# ============================================
+.vercel
+*.pem
+
+# TypeScript
+*.tsbuildinfo
+
+# Temporary files
+*.tmp
+.cache/
