@@ -45,6 +45,7 @@ class SupabaseDB:
             dict: Response from Supabase
         """
         try:
+            # Update current sentiment
             data = {
                 'ticker': ticker,
                 'sentiment_score': sentiment_score,
@@ -57,6 +58,19 @@ class SupabaseDB:
                 data,
                 on_conflict='ticker'
             ).execute()
+            
+            # Also save to history table for long-term tracking
+            history_data = {
+                'ticker': ticker,
+                'sentiment_score': sentiment_score,
+                'article_count': article_count,
+                'recorded_at': datetime.utcnow().isoformat()
+            }
+            
+            try:
+                self.client.table('sentiment_history').insert(history_data).execute()
+            except Exception as e:
+                logger.warning(f"Could not save history for {ticker}: {str(e)}")
             
             logger.info(
                 f"✓ Successfully updated {ticker} in Supabase | "
